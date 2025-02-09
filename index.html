@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Invitation!</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; margin-top: 100px; background-color: #fff5e1; }
+        h2 { color: #ff5733; }
+        p { font-size: 18px; color: #444; }
+        button { font-size: 20px; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 10px; border: none; }
+        #yesBtn { background-color: #4CAF50; color: white; }
+        #noBtn { background-color: #ff4444; color: white; position: absolute; }
+        #aceMsg { display: none; font-size: 18px; color: #ff5733; }
+    </style>
+</head>
+<body>
+
+    <h2>🚀 VIP Ride Invitation! 🎉</h2>
+    <p>Hey! Big day on *22nd Feb*! Wanna go on a fun little ride together?</p>
+
+    <button id="yesBtn" onclick="showAceMsg()">Yes! Let’s Go! 🚀</button>
+    <button id="noBtn" onmouseover="moveButton()">No 🙃</button>
+
+    <p id="aceMsg">Oh, and... can Ace come along too? 🐶✨ (You know he gets jealous when we go without him!)</p>
+
+    <script>
+        function showAceMsg() {
+            document.getElementById('aceMsg').style.display = 'block';
+        }
+
+        function moveButton() {
+            let x = Math.random() * (window.innerWidth - 100);
+            let y = Math.random() * (window.innerHeight - 50);
+            document.getElementById('noBtn').style.left = ${x}px;
+            document.getElementById('noBtn').style.top = ${y}px;
+        }
+    </script>
+
+</body>
+</html>
